@@ -34,9 +34,9 @@
 
 
     <form action="" class="container input-form" >
-        <h3 class="container text-center text-white"> Inventory-estimator Bot!</h3>
+        <h3 class="container text-center text-white mb-5"> Inventory-estimator Bot!</h3>
         <level class="col text-info font-weight-bold inventory-input" for ="inventoryCount">Enter Inventory count:</level> <br>
-        <input class="container text-info  inventory-input mt-5 rounded" type="number" id="inventoryCount" placeholder="number of bags in hand....."><br>
+        <input class="container text-info  inventory-input p-3 rounded" type="number" id="inventoryCount" placeholder="number of bags in hand....."><br>
 
         <p>
           <a class="col-md-3 col-sm-6 btn btn-info mt-5" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -49,15 +49,7 @@
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-        <input class="col-3 text-center rounded mt-5 bg-dark text-info p-2 to-submit"type="button" id="sub" value="Submit" onclick="costCalc()">
+         <input class="col-md-3 col-sm-6 text-center rounded mt-5 bg-dark text-info p-2 to-submit"type="button" id="sub" value="Submit" onclick="costCalc()">
         <div class="text-info result-p">
           <p class="text-white mt-4">Total cost including delivery fees is $ : </p><p id="totalCost"> </p><!-- result will be here -->
         </div>
@@ -80,7 +72,7 @@
         
     }
     .inventory-input{
-        font-size:25px;
+        font-size:20px;
     }
     .result-p{
         font-size:30px;

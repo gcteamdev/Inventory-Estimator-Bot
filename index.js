@@ -10,16 +10,16 @@ console.log("This is JWD Team-1: "+ team1);
 console.log("Last morning's total count of JWD-bites was: "+inventoryCount+";"+" We need total number of bag restock with JWD-bites are: = " + restock+";"+"total cost of bags before delivery fee will be: " + totalBeforeDelFee);
 
 
-if (restock <= 100) {
-  var delFee = 25;
-  console.log("Also, we would need 1 delivery person with the delivery fee of $25")
-} else if (restock <= 200){
+  if (restock >= 300) {
+  var delFee = 75;
+  console.log("we would need 3 delivery person with the delivery fee of $75")
+  } else if (restock >= 200){
    var delFee = 50;
-   console.log("Also, we would need 2 delivery person with the delivery fee of $50")
-} else {
-   var delFee = 75;
-  console.log("And we would need 3 delivery person with the delivery fee of $75")
-}
+   console.log("we would need 2 delivery person with the delivery fee of $50")
+  } else {
+   var delFee = 25;
+  console.log("we would need 1 delivery person with the delivery fee of $25")
+  } 
 console.log( 'Have a “SWEET” day!');
 
 var total = totalBeforeDelFee + delFee;
