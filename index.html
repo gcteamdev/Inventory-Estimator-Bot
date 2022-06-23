@@ -36,10 +36,30 @@
     <form action="" class="container input-form" >
         <h3 class="container text-center text-white"> Inventory-estimator Bot!</h3>
         <level class="col text-info font-weight-bold inventory-input" for ="inventoryCount">Enter Inventory count:</level> <br>
-        <input class="container text-info  inventory-input mt-5 rounded" type="number" id="inventoryCount" placeholder="....."><br>
+        <input class="container text-info  inventory-input mt-5 rounded" type="number" id="inventoryCount" placeholder="number of bags in hand....."><br>
+
+        <p>
+          <a class="col-3 btn btn-primary mt-4" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            View fixed data of inventory!
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            Maximum number of bags JWD can have, after restock, is 300 candy bags.<br>Per Bag is $3.00.
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
         <input class="col-3 text-center rounded mt-5 bg-dark text-info p-2 to-submit"type="button" id="sub" value="Submit" onclick="costCalc()">
         <div class="text-info result-p">
-          <p class="text-white mt-5">Total cost including delivery fees is $ : </p><p id="totalCost"> </p><!-- result will be here -->
+          <p class="text-white mt-4">Total cost including delivery fees is $ : </p><p id="totalCost"> </p><!-- result will be here -->
         </div>
       </form>
 
@@ -90,15 +110,15 @@
             var result = document.getElementById('totalCost')
 
 
-            if (restock <= 100) {
-        var delFee = 25;
-        console.log("we would need 1 delivery person with the delivery fee of $25")
-        } else if (restock <= 200){
+            if (restock >= 300) {
+        var delFee = 75;
+        console.log("we would need 3 delivery person with the delivery fee of $75")
+        } else if (restock >= 200){
          var delFee = 50;
          console.log("we would need 2 delivery person with the delivery fee of $50")
         } else {
-         var delFee = 75;
-        console.log("we would need 3 delivery person with the delivery fee of $75")
+         var delFee = 25;
+        console.log("we would need 1 delivery person with the delivery fee of $25")
         }   
            
           
